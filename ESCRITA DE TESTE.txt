@@ -1,0 +1,22 @@
+Epico/Funcionalidade/Suíte de Teste: Finalizar a compra e gerar numero do pedido
+
+Cenário de Teste:é o maior nível de abstração de informação
+Finalizar compra e exibir numero do pedido
+
+Caso de teste: um nível de abstração intermediario
+DADO que me encontro no checkout
+QUANDO clico em confirmar compra
+ENTÃO o numero do pedido e gerado
+
+Script de Teste: é o nível mais detalhado de validação
+DADO me encontro no ecommerce
+E adiciono um produto no carrinho
+E clico em carrinho
+E me encontro no checkout
+E adicio o meu endereço
+E confiro o produto
+E realizado o pagamento
+QUANDO clico em confirmar compra
+E o pedido foi enviado
+ENTÃO o numero do pedido é gerado
+E exibido na tela
